@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="review_booking.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="registeration">
+        <form action="thank.html" method="get">
+          <h2>Fill in your details</h2>
+          <div class="id">
+            <span class="icon"><img src="idNo.svg" /></span>
+            <input type="number" name="id_num" id="id_num" minlength="15" maxlength="15" required />
+            <label for="id_num">ID Number</label>
+          </div>
+
+          <div class="fn">
+            <!-- fn => Full Name -->
+            <span class="icon"
+              ><img src="account-circle-line.svg"
+            /></span>
+            <input type="text" name="fn" id="fn" required />
+            <label for="fn">Full Name</label>
+          </div>
+
+          <div class="mail">
+            <span class="icon"><img src="email.svg" /></span>
+            <input type="email" name="email" id="email" required />
+            <label for="email">Email</label>
+          </div>
+
+          <div class="tel">
+            <span class="icon"
+              ><img src="telephone.png" width="20"
+            /></span>
+            <input type="tel" name="tel" id="tel" required />
+            <label for="tel">Phone Number</label>
+          </div>
+          <button href="thank.html">Book this car</button>
+        </form>
+      </div>
+</body>
+</html>

@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Solway:wght@300;400;500;700;800&display=swap");
+
+* {
+  /* Canel all the browser default styling and
+    instering and font style */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Solway", serif;
+}
+/* تخصيص تنسيق الصفحة باستخدام CSS */
+html, body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f1ed;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* تنسيق الأقسام */
+.section {
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.section h2 {
+  margin-top: 13%;
+  font-size: 40px;
+}
+
+.activities {
+  position: relative;
+  top: 4.5rem;
+}
+
+/* تنسيق الأنشطة والمدن */
+.activities,
+.recent-cities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.recent-cities {
+  position: relative;
+  top: 4rem;
+  margin-bottom: 10%;
+}
+
+/* تنسيق بطاقات الأنشطة والمدن */
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.card p {
+  padding: 0 10px 10px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* تنسيق الأزرار في البطاقات */
+.card button {
+  background-color: #634406;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #8d6c2a;
+}
+@media screen and (min-width: 500px) and (max-width: 620px) {
+  .section .text {
+    margin-top: 20%;
+  }
+  .section .r-s {
+    margin-top: 25%;
+  }
+  .activities,
+  .recent-cities {
+    display: block;
+    position: relative;
+    left: 19%;
+    margin-bottom: 100px;
+  }
+  .card {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .section .text {
+    margin-top: 25%;
+  }
+  .section .r-s {
+    margin-top: 25%;
+  }
+}
+footer {
+  background: linear-gradient(145deg, #634406, #000000); /* تدرج لوني جميل */
+  color: white; /* لون النصوص */
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* تنظيم العناصر داخل الفوتر */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* تنسيق مستطيل الاتصال */
+.contact-info {
+  width: 60%;
+}
+
+/* رقم الهاتف والبريد الإلكتروني */
+.phone-email p {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.phone-email i {
+  margin-right: 8px;
+}
+
+/* تنسيق أيقونات وسائل التواصل الاجتماعي */
+.social-icons a {
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 24px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #c2a48c; /* اللون عند المرور */
+}
+
+/* تقييم النجوم */
+.rating span {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 100px;
+  color: #fff; /* تغيير اللون هنا إلى اللون الذي ترغب فيه */
+}
+
+/* From Uiverse.io by andrew-demchenk0 */
+.rating:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+
+.rating:not(:checked) > label {
+  float: left;
+  cursor: pointer;
+  font-size: 30px;
+  color: #666;
+}
+
+.rating:not(:checked) > label:before {
+  content: "★";
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #ff9e0b;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ff9e0b;
+}
+
+.rating > input:checked ~ label {
+  color: #ff9e0b;
+}
+
+/* الروابط */
+.links h5 {
+  color: #f5a623;
+  margin-bottom: 10px;
+  margin-right: 100px;
+}
+
+.links ul {
+  list-style: none;
+  margin-bottom: 10px;
+  padding-bottom: 100px;
+  padding-left: 0;
+}
+
+.links ul li a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 8px;
+  display: block;
+  transition: 0.5s;
+}
+
+.links ul li a:hover {
+  color: #ffb273;
+}
+
+/* النص التعريفي عن الجامعة */
+.university-info {
+  width: 55%;
+}
+
+.university-info h5 {
+  color: #f5a623;
+  margin-bottom: 10px;
+}
+
+.university-info p {
+  color: #ddd;
+}
+
+/* حقوق النشر وتغيير اللغة */
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  color: #bbb;
+}
+
+.footer-bottom .language-selector a {
+  color: #f5a623;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-bottom .language-selector a:hover {
+  color: white;
+}
+
+/* عند الضغط على اللغة */
+#lang-ar:active,
+#lang-en:active {
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-section .image img {
+    max-width: 80%;
+  }
+
+  .main-section .content {
+    text-align: center;
+  }
+
+  .about-us .details {
+    flex-direction: column;
+  }
+
+  .about-us .detail-item {
+    width: 100%;
+  }
+
+  .travels .travel-card {
+    width: 80%;
+  }
+}

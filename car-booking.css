@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    /* Canel all the browser default styling and
+    instering and font style */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+.steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 15px;
+    background: white;
+    width: 100%;
+    margin: 140px auto 50px;
+    border-top: 1px solid rgb(214, 213, 213);
+    border-bottom: 1px solid rgb(214, 213, 213);
+}
+
+.steps .step1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps .step1 .number1 {
+    margin: 40px 10px;
+    padding: 8px 20px;
+    height: 50px;
+    border: 2px solid #634406;
+    border-radius: 60px;
+    font-size: 24px;
+    background-color: #634406;
+    color: rgb(255, 246, 246);
+}
+
+.steps .step1 .dash {
+    border-bottom: 2px solid black;
+    position: relative;
+    bottom: 0.313rem;
+    left: 4%;
+}
+
+.steps .step1 .pg-of-fs {
+    font-size: 13px;
+}
+
+.steps .step2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps .step2 .number2 {
+    margin-right: 20px;
+    padding: 11px 20px;
+    height: 55px;
+    border: 2px solid #634406;
+    border-radius: 30px;
+    font-size: 24px;
+}
+
+.steps .step2 .pg-of-ss {
+    font-size: 30px;
+}
+
+.steps .step3 {
+    position: relative;
+    left: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.3;
+}
+
+.steps .step3 .number3 {
+    margin-right: 20px;
+    padding: 11px 20px;
+    height: 55px;
+    border: 2px solid rgb(88, 88, 255);
+    border-radius: 30px;
+    font-size: 24px;
+}
+
+.steps .step3 .dash {
+    border-bottom: 2px solid black;
+    position: relative;
+    bottom: 0.313rem;
+    right: 107%;
+}
+
+.steps .step3 .pg-of-ts {
+    font-size: 25px;
+}
+
+.sub-total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4%;
+    background: rgb(196, 192, 192);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.sub-total .text1 {
+    position: relative;
+    bottom: 40px;
+    font-size: 16px;
+}
+
+.sub-total .text2 {
+    font-size: 15px;
+}
+
+h1 {
+    margin: 20px 50px 80px;
+}
+
+.cars {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(221, 215, 215);
+    transition: .25s ease;
+}
+
+.cars:hover {
+    transform: scale(1.02);
+}
+
+.cars .car-img {
+    position: relative;
+    margin: 40px;
+}
+
+.cars .car-img .text1 {
+    position: absolute;
+    left: 10px;
+    bottom: 112%;
+    background-color: rgba(91, 91, 247, 0.404);
+    padding: 5px 50px;
+    border-radius: 13px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    font-size: 13px;
+}
+
+.cars .car-img img {
+    width: 212px;
+    height: 123px;
+}
+
+.cars .des-of-c1 {
+    margin-bottom: 32px;
+}
+
+.cars .des-of-c1 h2 {
+    margin-bottom: 15px;
+}
+
+.cars .des-of-c1 p {
+    font-size: 15px;
+}
+
+.cars .des-of-c1 .p1 {
+    margin-bottom: 34px;
+}
+
+.cars .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 20px;
+}
+
+.cars .price h1 span {
+    font-weight: normal;
+}
+
+.cars .price p {
+    position: relative;
+    bottom: 60px;
+    font-size: 14px;
+}
+
+.cars .price a {
+    position: absolute;
+    top: 77%;
+    outline: none;
+    border: 1px solid black;
+    padding: 20px 60px;
+    border-radius: 10px;
+    background: transparent;
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.6s ease-in-out;
+}
+.cars .price a:hover {
+    color: white;
+    background-color: #634406;
+}
+footer {
+    background: linear-gradient(145deg, #634406, #000000); /* تدرج لوني جميل */
+    color: white; /* لون النصوص */
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* تنظيم العناصر داخل الفوتر */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* تنسيق مستطيل الاتصال */
+.contact-info {
+    width: 60%;
+}
+
+/* رقم الهاتف والبريد الإلكتروني */
+.phone-email p {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.phone-email i {
+    margin-right: 8px;
+}
+
+/* تنسيق أيقونات وسائل التواصل الاجتماعي */
+.social-icons a {
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #c2a48c; /* اللون عند المرور */
+}
+
+
+/* تقييم النجوم */
+.rating span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 100px;
+    color: #fff; /* تغيير اللون هنا إلى اللون الذي ترغب فيه */
+}
+
+/* From Uiverse.io by andrew-demchenk0 */ 
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: left;
+    cursor: pointer;
+    font-size: 30px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #ff9e0b;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #ff9e0b;
+  }
+  
+  
+  
+  
+
+/* الروابط */
+.links h5 {
+    color: #f5a623;
+    margin-bottom: 10px;
+    margin-right: 100px;
+
+}
+
+.links ul {
+    list-style: none;
+    margin-bottom: 10px;
+    padding-bottom :100px; ;
+    padding-left: 0;
+}
+
+.links ul li a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+    transition: .5s;
+}
+
+.links ul li a:hover {
+    color: #ffb273;
+}
+
+/* النص التعريفي عن الجامعة */
+.university-info {
+    width: 55%;
+}
+
+.university-info h5 {
+    color: #f5a623;
+    margin-bottom: 10px;
+}
+
+.university-info p {
+    color: #ddd;
+}
+
+/* حقوق النشر وتغيير اللغة */
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    color: #bbb;
+}
+
+.footer-bottom .language-selector a {
+    color: #f5a623;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-bottom .language-selector a:hover {
+    color: white;
+}
+
+/* عند الضغط على اللغة */
+#lang-ar:active, #lang-en:active {
+    color: #fff;
+    font-weight: bold;
+}
+@media screen and (min-width:1121px) and (max-width:1200px) {
+    .steps .step1 .dash, .steps .step3 .dash {
+        bottom: 15px;
+    }
+    .steps .step2 {
+        width: 30%;
+    }
+    .steps .sub-total .text1 {
+        text-align: center;
+    }
+}
+@media screen and (max-width:1120px) {
+    .steps .step1 .dash, .steps .step3 .dash {
+        bottom: 15px;
+    }
+    .steps .step2 {
+        width: 40%;
+    }
+    .steps .sub-total .text1 {
+        text-align: center;
+    }
+}
+@media screen and (max-width:981px) {
+    .steps {
+        display: none;
+    }
+}
+@media screen and (min-width:989px) and (max-width:998px){
+    .cars .car-img .text1 {
+        bottom: 113%;
+    }
+}
+@media screen and (min-width:968px) and (max-width:988px){
+    .cars .car-img .text1 {
+        bottom: 113.5%;
+    }
+}
+@media screen and (max-width:981px) {
+    h1 {
+        text-align: center;
+    }
+    .steps {
+        display: none;
+    }
+}
+@media screen and (min-width:959px) and (max-width:967px) {
+    .cars .car-img .text1 {
+        bottom: 124.5%;
+    }
+}
+@media screen and (max-width:958px) {
+    .cars {
+        flex-direction: column;
+    }
+    .cars .car-img .text1 {
+        left: 94px;
+        bottom: 107%;
+    }
+    .cars .car-img img {
+        width: 350px;
+        height: auto;
+        object-fit: cover;
+    }
+    .cars .des-of-c1 {
+        text-align: center;
+    }
+    .cars .des-of-c1 .p1 {
+        margin-bottom: 23px;
+    }
+    .cars .price {
+        bottom: 40px;
+    }
+}
+@media screen and (max-width: 912px) {
+    h1 {
+        position: relative;
+        top: 30px;
+        margin-top: 80px;
+    }
+    .cars .price {
+        position: relative;
+        bottom: 80px;
+    }
+    .cars .price p {
+        position: relative;
+        bottom: 40px;
+    }
+    .cars .price a {
+        top: 88%;
+        padding: 10px 20px;
+    }
+}
+@media screen and (max-width: 540px) {
+    @media screen and (max-width: 912px) {
+        h1 {
+            position: relative;
+            top: 30px;
+            margin-top: 80px;
+        }
+        .cars .price {
+            position: relative;
+            bottom: 80px;
+        }
+        .cars .price p {
+            position: relative;
+            bottom: 40px;
+        }
+        .cars .price a {
+            top: 100%;
+            padding: 10px 20px;
+        }
+    }
+}
+@media screen and (min-width:500px) and (max-width:837px) {
+    .header .navigation {
+        left: 22%;
+        width: 45%;
+        padding: 6px 0;
+    }
+}
+@media (max-width: 768px) {
+    h1 {
+        position: relative;
+        top: 30px;
+        margin-top: 80px;
+    }
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-section .image img {
+        max-width: 80%;
+    }
+
+    .main-section .content {
+        text-align: center;
+    }
+
+    .about-us .details {
+        flex-direction: column;
+    }
+
+    .about-us .detail-item {
+        width: 100%;
+    }
+
+    .travels .travel-card {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 430px) {
+    h1 {
+        position: relative;
+        top: 30px;
+        margin-top: 80px;
+    }
+    .cars {
+        height: 600px;
+    }
+    .cars .price {
+        position: relative;
+        bottom: 120px;
+    }
+    .cars .price p {
+        position: relative;
+        bottom: 40px;
+    }
+    .cars .price a {
+        top: 88%;
+        padding: 10px 20px;
+    }
+}

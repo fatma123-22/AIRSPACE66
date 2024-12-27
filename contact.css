@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+.contact-container {
+  margin-top: 90px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 8%;
+}
+.contact-container .row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px;
+}
+.row section.col {
+  display: flex;
+  flex-direction: column;
+}
+.row section.left {
+  flex-basis: 35%;
+  min-width: 320px;
+  margin-right: 60px;
+}
+.row section.right {
+  flex-basis: 60%;
+}
+section.left .contactTitle h2 {
+  position: relative;
+  font-size: 28px;
+  color: #634406;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+section.left .contactTitle h2::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  background-color: #634406;
+  top: 120%;
+  left: 0;
+}
+section.left .contactTitle h2::after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 3px;
+  background-color: #634406;
+  top: calc(120% - 1px);
+  left: 0;
+}
+section.left .contactTitle p {
+  font-size: 17px;
+  color: #634406;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding-bottom: 22px;
+}
+section.left .contactInfo {
+  margin-bottom: 16px;
+}
+.contactInfo .iconGroup {
+  display: flex;
+  align-items: center;
+  margin: 25px 0px;
+}
+.iconGroup .icon {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #634406;
+  border-radius: 50%;
+  margin-right: 20px;
+  position: relative;
+}
+.iconGroup .icon i {
+  font-size: 20px;
+  color: #634406;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.iconGroup .details span {
+  display: block;
+  color: #634406;
+  font-size: 18px;
+}
+.iconGroup .details span:nth-child(1) {
+  text-transform: uppercase;
+  color: #634406;
+}
+section.left .socialMedia {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 22px 0px 20px;
+}
+.socialMedia a {
+  width: 35px;
+  height: 35px;
+  text-decoration: none;
+  text-align: center;
+  margin-right: 15px;
+  border-radius: 5px;
+  background-color: #634406;
+  transition: 0.4s;
+}
+.socialMedia a i {
+  color: #ddd;
+  font-size: 18px;
+  line-height: 35px;
+  border: 1px solid transparent;
+}
+.socialMedia a:hover {
+  transform: translateY(-5px);
+  background-color: #ccb78d;
+  color: #ad9971;
+  border: 1px solid #c0a163;
+}
+.socialMedia a:hover i {
+  color: #786849;
+}
+
+/* Code for the right section (column) */
+
+.row section.right .messageForm {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+.row section.right .inputGroup {
+  margin: 18px 0px;
+  position: relative;
+}
+.messageForm .halfWidth {
+  flex-basis: 48%;
+}
+.messageForm .fullWidth {
+  flex-basis: 100%;
+}
+.messageForm input,
+.messageForm textarea {
+  width: 100%;
+  font-size: 18px;
+  padding: 2px 0px;
+  background-color: #ffffff;
+  color: #634406;
+  border: none;
+  border-bottom: 2px solid #634406;
+  outline: none;
+}
+.messageForm textarea {
+  resize: none;
+  height: 220px;
+  display: block;
+}
+textarea::-webkit-scrollbar {
+  width: 5px;
+}
+textarea::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: #634406;
+  border-radius: 15px;
+}
+.inputGroup label {
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  color: #634406;
+  font-size: 18px;
+  transition: 0.4s;
+  pointer-events: none;
+}
+.inputGroup:nth-child(4) label {
+  top: 2px;
+}
+.inputGroup input:focus ~ label,
+.inputGroup textarea:focus ~ label,
+.inputGroup input:valid ~ label,
+.inputGroup textarea:valid ~ label {
+  transform: translateY(-30px);
+  font-size: 16px;
+}
+.inputGroup button {
+  padding: 8px 0px;
+  font-size: 18px;
+  background-color: #8f6e2d;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px #ddd;
+  transition: 0.4s;
+}
+.inputGroup button a {
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-align: center;
+}
+.inputGroup button a:link {
+  color: #ffffff;
+  border: none;
+}
+.inputGroup button a:visited {
+  color: #ffffff;
+  border: none;
+}
+.inputGroup button:hover {
+  background-color: #ddd;
+  color: #5a5448;
+  box-shadow: 0px 0px 15px #ddd;
+}
+.inputGroup button a:hover {
+  background-color: #ddd;
+  color: #5a5448;
+}
+@media (max-width: 1100px) {
+  .messageForm .halfWidth {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .container .row {
+    flex-wrap: wrap;
+  }
+  .row section.left,
+  .row section.right {
+    flex-basis: 100%;
+    margin: 0px;
+  }
+}
+@media (max-width: 596px) {
+	.inputGroup button a {
+		padding: 10px 10px;
+	}
+}
+@media (max-width: 524px) {
+	.contact-container .row {
+		flex-direction: column;
+	}
+}
+footer {
+  background: linear-gradient(145deg, #634406, #000000); /* تدرج لوني جميل */
+  color: white; /* لون النصوص */
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* تنظيم العناصر داخل الفوتر */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* تنسيق مستطيل الاتصال */
+.contact-info {
+  width: 60%;
+}
+
+/* رقم الهاتف والبريد الإلكتروني */
+.phone-email p {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.phone-email i {
+  margin-right: 8px;
+}
+
+/* تنسيق أيقونات وسائل التواصل الاجتماعي */
+.social-icons a {
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 24px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #c2a48c; /* اللون عند المرور */
+}
+
+/* تقييم النجوم */
+.rating span {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 100px;
+  color: #fff; /* تغيير اللون هنا إلى اللون الذي ترغب فيه */
+}
+
+/* From Uiverse.io by andrew-demchenk0 */
+.rating:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+
+.rating:not(:checked) > label {
+  float: left;
+  cursor: pointer;
+  font-size: 30px;
+  color: #666;
+}
+
+.rating:not(:checked) > label:before {
+  content: "★";
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #ff9e0b;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ff9e0b;
+}
+
+.rating > input:checked ~ label {
+  color: #ff9e0b;
+}
+
+/* الروابط */
+.links h5 {
+  color: #f5a623;
+  margin-bottom: 10px;
+  margin-right: 100px;
+}
+
+.links ul {
+  list-style: none;
+  margin-bottom: 10px;
+  padding-bottom: 100px;
+  padding-left: 0;
+}
+
+.links ul li a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 8px;
+  display: block;
+  transition: 0.5s;
+}
+
+.links ul li a:hover {
+  color: #ffb273;
+}
+
+/* النص التعريفي عن الجامعة */
+.university-info {
+  width: 55%;
+}
+
+.university-info h5 {
+  color: #f5a623;
+  margin-bottom: 10px;
+}
+
+.university-info p {
+  color: #ddd;
+}
+
+/* حقوق النشر وتغيير اللغة */
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  color: #bbb;
+}
+
+.footer-bottom .language-selector a {
+  color: #f5a623;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-bottom .language-selector a:hover {
+  color: white;
+}
+
+/* عند الضغط على اللغة */
+#lang-ar:active,
+#lang-en:active {
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-section .image img {
+    max-width: 80%;
+  }
+
+  .main-section .content {
+    text-align: center;
+  }
+
+  .about-us .details {
+    flex-direction: column;
+  }
+
+  .about-us .detail-item {
+    width: 100%;
+  }
+
+  .travels .travel-card {
+    width: 80%;
+  }
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="car-booking.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <title>AIRSPACE</title>
+    <link rel="shortcut icon" href="assets/fav.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href="#" class="nav__logo"> AIRSPACE </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="home.html" class="nav__link">Home</a></li>
+
+            <li><a href="flights.html" class="nav__link">Flights</a></li>
+
+            <li><a href="car-booking.html" class="nav__link">Cars</a></li>
+
+            <li><a href="activites.html" class="nav__link">Activities</a></li>
+            <li><a href="hotels.html" class="nav__link">Hotels</a></li>
+
+            <li><a href="about.html" class="nav__link">About</a></li>
+
+            <li><a href="contact.html" class="nav__link">Contact</a></li>
+            <!--=============== DROPDOWN 2 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Users <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="user.html" class="dropdown__link">
+                    <i class="ri-user-line"></i> Profiles
+                  </a>
+                </li>
+
+                
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="steps">
+      <div class="step1">
+        <span class="number1">1</span>
+        <!-- pg-of-fs => paragragh of the first step -->
+        <p class="pg-of-fs">
+          Dubai International Airport <br />
+          Radisson Blu Hotel, Dubai Deira Creek <br />
+          8 Jan, 21:45 PM - <br />
+          8 Jan, 22:45 PM
+        </p>
+        <span class="dash"
+          >&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp;</span
+        >
+      </div>
+    
+      <div class="step2">
+        <span class="number2">2</span>
+        <!-- pg-of-ss => paragragh of the second step -->
+        <p class="pg-of-ss">Select a Car</p>
+      </div>
+
+      <div class="step3">
+        <span class="number3">3</span>
+        <!-- pg-of-ts => paragragh of the third step -->
+        <p class="pg-of-ts">Review Booking</p>
+        <span class="dash"
+          >&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp;</span
+        >
+      </div>
+
+      <div class="sub-total">
+        <p class="text1">Sub Total</p>
+        <p class="text2">0 EGP</p>
+      </div>
+    </div>
+
+    <h1>Select Car</h1>
+
+    <div class="cars">
+      <div class="car-img">
+        <!-- <span class="text1">Intermediate</span> -->
+        <img src="CAR1.png" alt="Kia-Cerato 2022 or Similar" />
+      </div>
+
+      <!-- des-of-c1 => description of car1-->
+      <div class="des-of-c1">
+        <h2>Kia-Cerato 2022 or Similar</h2>
+        <p class="p1">Include free 225 Km</p>
+        <p class="p2">May descrease based on your <br> memebership after login</p>
+      </div>
+
+      <div class="price">
+        <h1>175.00<span>&nbsp;/day</span></h1>
+        <p>VAT not included</p>
+        <a href="review_bookingcar1.html">View</a>
+      </div>
+    </div>
+
+    <div class="cars">
+      <div class="car-img">
+        <!-- <span class="text1">Standard</span> -->
+        <img src="CAR2.png" alt="Kia-Cerato 2022 or Similar" />
+      </div>
+
+      <!-- des-of-c1 => description of car1-->
+      <div class="des-of-c1">
+        <h2>Toyota-Camry LE 2022 or Similar</h2>
+        <p class="p1">Include free 225 Km</p>
+        <p class="p2">May descrease based on your <br> memebership after login</p>
+      </div>
+
+      <div class="price">
+        <h1 class="price-perday">290.00<span>&nbsp;/day</span></h1>
+        <p>VAT not included</p>
+        <a href="review_bookingcar2.html">View</a>
+      </div>
+    </div>
+
+    <div class="cars">
+      <div class="car-img">
+        <!-- <span class="text1">SUV Sprt Ut Vehicle</span> -->
+        <img src="CAR3.png" alt="Kia-Cerato 2022 or Similar" />
+      </div>
+
+      <!-- des-of-c1 => description of car1-->
+      <div class="des-of-c1">
+        <h2>Toyota-Fortuner - GX2- 4&#9747;4 2022 or Similar</h2>
+        <p class="p1">Include free 225 Km</p>
+        <p class="p2">May descrease based on your <br> memebership after login</p>
+      </div>
+
+      <div class="price">
+        <h1>200.00<span>&nbsp;/day</span></h1>
+        <p>VAT not included</p>
+        <a href="review_bookingcar3.html">View</a>
+      </div>
+    </div>
+
+    <div class="cars">
+      <div class="car-img">
+        <!-- <span class="text1">SUV Sprt Ut Vehicle</span> -->
+        <img src="CAR4.png" alt="Kia-Cerato 2022 or Similar" />
+      </div>
+
+      <!-- des-of-c1 => description of car1-->
+      <div class="des-of-c1">
+        <h2>Nissan-Patrol Platinum 2022 or Similar</h2>
+        <p class="p1">Include free 225 Km</p>
+        <p class="p2">May descrease based on your <br> memebership after login</p>
+      </div>
+
+      <div class="price">
+        <h1>400.00<span>&nbsp;/day</span></h1>
+        <p>VAT not included</p>
+        <a href="review_bookingcar4.html">View</a>
+      </div>
+    </div>
+
+    <div class="cars">
+      <div class="car-img">
+        <!-- <span class="text1">Pickup</span> -->
+        <img src="CAR5.png" alt="Kia-Cerato 2022 or Similar" />
+      </div>
+
+      <!-- des-of-c1 => description of car1-->
+      <div class="des-of-c1">
+        <h2>ISUZU PICKUP LS Gear Automatic - 2022 Or Similar</h2>
+        <p class="p1">Include free 225 Km</p>
+        <p class="p2">May descrease based on your <br> memebership after login</p>
+      </div>
+
+      <div class="price">
+        <h1>150.00<span>&nbsp;/day</span></h1>
+        <p>VAT not included</p>
+        <a href="review_bookingcar5.html">View</a>
+      </div>
+    </div>
+
+    <div class="cars">
+      <div class="car-img">
+        <!-- <span class="text1">Luxury</span> -->
+        <img src="CAR6.png" alt="Kia-Cerato 2022 or Similar" />
+      </div>
+
+      <!-- des-of-c1 => description of car1-->
+      <div class="des-of-c1">
+        <h2>Mercedes - C200 2022 or Similar</h2>
+        <p class="p1">Include free 225 Km</p>
+        <p class="p2">May descrease based on your <br> memebership after login</p>
+      </div>
+
+      <div class="price">
+        <h1>275.00<span>&nbsp;/day</span></h1>
+        <p>VAT not included</p>
+        <a href="review_bookingcar6.html">View</a>
+      </div>
+    </div>
+
+    <footer id="bottom">
+      <div class="footer-container">
+        <!-- مستطيل البيانات -->
+        <div class="contact-info">
+          <div class="phone-email">
+            <p><i class="fa fa-phone"></i> +03 853423</p>
+            <p><i class="fa fa-envelope"></i> info@yourcompany.example.com</p>
+          </div>
+
+          <!-- أيقونات وسائل التواصل الاجتماعي -->
+          <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+          <!-- تقييم النجوم -->
+          <div class="rating">
+            <span>Quality</span>
+            <div class="rating">
+              <input value="5" name="rate" id="star5" type="radio" />
+              <label title="text" for="star5"></label>
+              <input value="4" name="rate" id="star4" type="radio" />
+              <label title="text" for="star4"></label>
+              <input value="3" name="rate" id="star3" type="radio" checked="" />
+              <label title="text" for="star3"></label>
+              <input value="2" name="rate" id="star2" type="radio" />
+              <label title="text" for="star2"></label>
+              <input value="1" name="rate" id="star1" type="radio" />
+              <label title="text" for="star1"></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- الروابط -->
+        <div class="links">
+          <h5>Useful Links</h5>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Legal</a></li>
+          </ul>
+        </div>
+
+        <!-- نص تعريفي عن الجامعة -->
+        <div class="university-info">
+          <h5>About Our University</h5>
+          <p>
+            We are a team of passionate people aiming to improve lives through
+            our products. Our products are designed to help businesses grow.
+          </p>
+        </div>
+
+        <!-- حقوق النشر وتغيير اللغة -->
+        <div class="footer-bottom">
+          <p>Copyright © Your Company</p>
+          <div class="language-selector">
+            <a href="#" id="lang-ar">Arabic</a> |
+            <a href="#" id="lang-en">English</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

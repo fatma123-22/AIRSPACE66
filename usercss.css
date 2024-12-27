@@ -1,0 +1,68 @@
+/* Importing the Roboto font family from Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+/* Styling the body of the page */
+body {
+    background-color: #634406; /* Set the background color */
+    background-repeat: no-repeat; /* Ensure the background doesn't repeat */
+    background-size: cover; /* Cover the entire page with the background */
+    font-family: "Roboto", sans-serif; /* Set the font family to Roboto */
+}
+
+/* Adding shadow to elements with the class 'shadow' */
+.shadow {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important; /* Light shadow for depth */
+}
+
+/* Setting a minimum width for the profile tab navigation */
+.profile-tab-nav {
+    min-width: 250px; /* Make sure the tab navigation has a minimum width of 250px */
+}
+
+/* Styling for the tab content, making it take up more space */
+.tab-content {
+    flex: 200%; /* Increase the width of the tab content */
+}
+
+/* Adding margin to form groups for spacing */
+.form-group {
+    margin-bottom: 1.5rem; /* Space below each form element */
+}
+
+/* Styling the navigation pills, especially the links */
+.nav-pills a.nav-link {
+    padding: 15px 20px; /* Adding padding around the links */
+    border-bottom: 1px solid #634463; /* Adding a border below the link */
+    border-radius: 0; /* Removing rounded corners for the link */
+    color: #0b0c0c; /* Setting the text color */
+}
+
+/* Setting a fixed width for the navigation pills */
+.nav-pills a.nav-link {
+    width: 100px; /* Fixed width of 100px for each link */
+}
+
+/* Styling the image to create a circular profile image */
+.img-circle img {
+    height: 100px; /* Height of the image */
+    width: 100px; /* Width of the image */
+    border-radius: 100%; /* Make the image circular */
+    border: 5px solid #fff; /* Adding a white border around the image */
+}
+
+/* Adding a background color to the active tab link */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #634406; /* Highlight the active tab with the same color as the body */
+}
+
+/* Styling the header with the class 'ddj' */
+.ddj {
+    color: #fff; /* Set the text color to white */
+}
+
+/* Styling buttons with the class 'mwb' */
+.mwb {
+    color: white; /* Set the text color of the button to white */
+    background-color: #634406; /* Set the background color to the same as the body */
+    border-radius: 10px; /* Round the corners of the button */
+}
